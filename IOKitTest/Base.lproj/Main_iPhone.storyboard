@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="I8P-Qr-Ux9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="X7H-Pm-RIh">
+            <objects>
+                <viewController id="I8P-Qr-Ux9" customClass="ELLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E8b-lD-SMY"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfc-uQ-iqb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q0h-I1-7E6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cFK-v4-bqJ">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jg5-2h-UjZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-yb-Wt1">
+                                        <rect key="frame" x="10" y="5" width="300" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.92156862745098034" blue="0.92941176470588238" alpha="1" colorSpace="deviceRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Ff9-yb-Wt1" firstAttribute="leading" secondItem="Jg5-2h-UjZ" secondAttribute="leading" constant="10" id="2c3-mz-eQP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ff9-yb-Wt1" secondAttribute="bottom" constant="5" id="8DQ-Rb-Mkh"/>
+                                    <constraint firstItem="Ff9-yb-Wt1" firstAttribute="top" secondItem="Jg5-2h-UjZ" secondAttribute="top" constant="5" id="Rj2-eX-kab"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ff9-yb-Wt1" secondAttribute="trailing" constant="10" id="zN4-v0-vE4"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gjc-77-whm" appends="YES" id="Qtr-SV-7nM"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oJp-IH-8Gp">
+                                <rect key="frame" x="0.0" y="30" width="320" height="538"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="H3L-WQ-n1n">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="I8P-Qr-Ux9" id="pTI-jz-JHf"/>
+                                    </connections>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="I8P-Qr-Ux9" id="2Oi-MN-Q76"/>
+                                    <outlet property="delegate" destination="I8P-Qr-Ux9" id="t5e-Xx-0cs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oJp-IH-8Gp" secondAttribute="trailing" id="LfV-jn-VGm"/>
+                            <constraint firstItem="Jg5-2h-UjZ" firstAttribute="leading" secondItem="q0h-I1-7E6" secondAttribute="leading" id="Pdv-Od-RBf"/>
+                            <constraint firstItem="oJp-IH-8Gp" firstAttribute="leading" secondItem="q0h-I1-7E6" secondAttribute="leading" id="UMy-Tk-zAB"/>
+                            <constraint firstItem="Jg5-2h-UjZ" firstAttribute="top" secondItem="q0h-I1-7E6" secondAttribute="top" constant="20" id="Vj4-0S-Wm4"/>
+                            <constraint firstItem="oJp-IH-8Gp" firstAttribute="top" secondItem="Jg5-2h-UjZ" secondAttribute="bottom" id="XIy-be-yt3"/>
+                            <constraint firstAttribute="bottom" secondItem="oJp-IH-8Gp" secondAttribute="bottom" id="Y3y-PT-5fQ"/>
+                            <constraint firstAttribute="centerY" secondItem="cFK-v4-bqJ" secondAttribute="centerY" id="cCr-Jp-kfM"/>
+                            <constraint firstAttribute="trailing" secondItem="Jg5-2h-UjZ" secondAttribute="trailing" id="otF-bc-M2M"/>
+                            <constraint firstAttribute="centerX" secondItem="cFK-v4-bqJ" secondAttribute="centerX" id="yaI-mC-uFj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="H3L-WQ-n1n" id="X0M-yt-ief"/>
+                        <outlet property="spinner" destination="cFK-v4-bqJ" id="te5-4n-tfa"/>
+                        <outlet property="tableView" destination="oJp-IH-8Gp" id="hgE-s7-DYS"/>
+                        <outlet property="trailHolder" destination="Jg5-2h-UjZ" id="rqh-Ue-fCs"/>
+                        <outlet property="trailLabel" destination="Ff9-yb-Wt1" id="r0g-Yl-fBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8H-G9-rgJ" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gjc-77-whm">
+                    <connections>
+                        <action selector="moveBack:" destination="I8P-Qr-Ux9" id="v6P-F9-8dV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
