@@ -131,6 +131,7 @@ static void assertion(int condition, char *message) {
     kern_return_t status = KERN_SUCCESS;
 
     status = IORegistryEntryGetNameInPlane(service, options.plane, name);
+    if(status != KERN_SUCCESS) return nil;
     assertion(status == KERN_SUCCESS, "can't obtain name");
 
     NSMutableArray *translatedProperties = [NSMutableArray new];

@@ -32,7 +32,8 @@
 }
 
 - (void)addChild:(ELLIOKitNodeInfo *)child {
-    [_children addObject:child];
+   if(child != nil)
+       [_children addObject:child];
 }
 
 @end
