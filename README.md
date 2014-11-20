@@ -14,9 +14,9 @@ iOS 8 adapted by me.
 Root > N61AP > AppleARMPE > arm-io > AppleT7000IO > ans > AppleA7IOPV1 > AppleCSI > asp > ASPStorage
 
 defaults-bits-per-cell:
-1. 3 = TLC
-2. 2 = MLC
-3. 1 = SLC                                                                                                
+3 = TLC
+2 = MLC
+1 = SLC                                                                                                
 
 ## Check Battery Cycle Count
 
