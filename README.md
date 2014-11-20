@@ -4,7 +4,7 @@ IOKitBrowser
 Uses private API to access various hardware related informations on iOS.
 I used it to check the battery cycle count. But there are other informations hidden es well, eg. temperature etc.
 
-(c) developed by Lyon Anderson
+(c) developed and copyright by Lyon Anderson
 http://www.lyonanderson.org/blog/2014/02/12/ios-iokit-browser/
 
 iOS 8 adapted by me.      
@@ -25,4 +25,12 @@ Root > N61AP > AppleARMPE > charger > AppleARMPMUCharger
 Scroll to CycleCount.
 
 
-Do not use for App submissions. You will be rejected.
+Do not use for App submissions. You will be rejected. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
