@@ -18,24 +18,9 @@
 		AD7E3EA9186BBBBB00E47119 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7E3EA7186BBBBB00E47119 /* Main_iPad.storyboard */; };
 		AD7E3EAC186BBBBB00E47119 /* ELLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E3EAB186BBBBB00E47119 /* ELLViewController.m */; };
 		AD7E3EAE186BBBBB00E47119 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7E3EAD186BBBBB00E47119 /* Images.xcassets */; };
-		AD7E3EB5186BBBBB00E47119 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7E3EB4186BBBBB00E47119 /* XCTest.framework */; };
-		AD7E3EB6186BBBBB00E47119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7E3E92186BBBBB00E47119 /* Foundation.framework */; };
-		AD7E3EB7186BBBBB00E47119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7E3E96186BBBBB00E47119 /* UIKit.framework */; };
-		AD7E3EBF186BBBBB00E47119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD7E3EBD186BBBBB00E47119 /* InfoPlist.strings */; };
-		AD7E3EC1186BBBBB00E47119 /* IOKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E3EC0186BBBBB00E47119 /* IOKitTestTests.m */; };
 		AD7E3ED0186BBDCA00E47119 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7E3ECF186BBDCA00E47119 /* IOKit.framework */; };
 		ADDA110718A8D511002E84F9 /* ELLIOKitDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA110618A8D511002E84F9 /* ELLIOKitDumper.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD7E3EB8186BBBBB00E47119 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD7E3E87186BBBBB00E47119 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD7E3E8E186BBBBB00E47119;
-			remoteInfo = IOKitTest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD538624186E4E4F00BC5972 /* ELLIOKitNodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLIOKitNodeInfo.h; sourceTree = "<group>"; };
@@ -55,7 +40,6 @@
 		AD7E3EAA186BBBBB00E47119 /* ELLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELLViewController.h; sourceTree = "<group>"; };
 		AD7E3EAB186BBBBB00E47119 /* ELLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELLViewController.m; sourceTree = "<group>"; };
 		AD7E3EAD186BBBBB00E47119 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AD7E3EB3186BBBBB00E47119 /* IOKitBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOKitBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7E3EB4186BBBBB00E47119 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AD7E3EBC186BBBBB00E47119 /* IOKitBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOKitBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		AD7E3EBE186BBBBB00E47119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -77,16 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD7E3EB0186BBBBB00E47119 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD7E3EB5186BBBBB00E47119 /* XCTest.framework in Frameworks */,
-				AD7E3EB7186BBBBB00E47119 /* UIKit.framework in Frameworks */,
-				AD7E3EB6186BBBBB00E47119 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				AD7E3E8F186BBBBB00E47119 /* IOKitBrowser.app */,
-				AD7E3EB3186BBBBB00E47119 /* IOKitBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,24 +163,6 @@
 			productReference = AD7E3E8F186BBBBB00E47119 /* IOKitBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD7E3EB2186BBBBB00E47119 /* IOKitBrowserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD7E3EC7186BBBBB00E47119 /* Build configuration list for PBXNativeTarget "IOKitBrowserTests" */;
-			buildPhases = (
-				AD7E3EAF186BBBBB00E47119 /* Sources */,
-				AD7E3EB0186BBBBB00E47119 /* Frameworks */,
-				AD7E3EB1186BBBBB00E47119 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD7E3EB9186BBBBB00E47119 /* PBXTargetDependency */,
-			);
-			name = IOKitBrowserTests;
-			productName = IOKitTestTests;
-			productReference = AD7E3EB3186BBBBB00E47119 /* IOKitBrowserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,11 +170,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ELL;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Electric Labs";
 				TargetAttributes = {
-					AD7E3EB2186BBBBB00E47119 = {
-						TestTargetID = AD7E3E8E186BBBBB00E47119;
+					AD7E3E8E186BBBBB00E47119 = {
+						DevelopmentTeam = G7W9WL7U59;
 					};
 				};
 			};
@@ -237,7 +192,6 @@
 			projectRoot = "";
 			targets = (
 				AD7E3E8E186BBBBB00E47119 /* IOKitBrowser */,
-				AD7E3EB2186BBBBB00E47119 /* IOKitBrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,14 +205,6 @@
 				AD7E3EAE186BBBBB00E47119 /* Images.xcassets in Resources */,
 				AD7E3EA6186BBBBB00E47119 /* Main_iPhone.storyboard in Resources */,
 				AD7E3E9D186BBBBB00E47119 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD7E3EB1186BBBBB00E47119 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD7E3EBF186BBBBB00E47119 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,23 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD7E3EAF186BBBBB00E47119 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD7E3EC1186BBBBB00E47119 /* IOKitTestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD7E3EB9186BBBBB00E47119 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD7E3E8E186BBBBB00E47119 /* IOKitBrowser */;
-			targetProxy = AD7E3EB8186BBBBB00E47119 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD7E3E9B186BBBBB00E47119 /* InfoPlist.strings */ = {
@@ -353,10 +283,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOKitTest/IOKitBrowser-Prefix.pch";
 				INFOPLIST_FILE = "IOKitTest/IOKitBrowser-Info.plist";
 				PRODUCT_NAME = IOKitBrowser;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = profiling;
@@ -365,7 +298,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -465,38 +397,18 @@
 			};
 			name = profiling;
 		};
-		250897B0EE294EA7AD797C9D /* adhoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOKitTest.app/IOKitTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOKitTest/IOKitTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IOKitTestTests/IOKitBrowserTests-Info.plist";
-				PRODUCT_NAME = IOKitBrowserTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = adhoc;
-		};
 		254D11163F85421D922EA685 /* adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOKitTest/IOKitBrowser-Prefix.pch";
 				INFOPLIST_FILE = "IOKitTest/IOKitBrowser-Info.plist";
 				PRODUCT_NAME = IOKitBrowser;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = adhoc;
@@ -505,7 +417,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -557,7 +468,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -609,7 +519,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -656,10 +565,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOKitTest/IOKitBrowser-Prefix.pch";
 				INFOPLIST_FILE = "IOKitTest/IOKitBrowser-Info.plist";
 				PRODUCT_NAME = IOKitBrowser;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -669,78 +581,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOKitTest/IOKitBrowser-Prefix.pch";
 				INFOPLIST_FILE = "IOKitTest/IOKitBrowser-Info.plist";
 				PRODUCT_NAME = IOKitBrowser;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
-		};
-		AD7E3EC8186BBBBB00E47119 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOKitTest.app/IOKitTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOKitTest/IOKitTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IOKitTestTests/IOKitBrowserTests-Info.plist";
-				PRODUCT_NAME = IOKitBrowserTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AD7E3EC9186BBBBB00E47119 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOKitTest.app/IOKitTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOKitTest/IOKitTest-Prefix.pch";
-				INFOPLIST_FILE = "IOKitTestTests/IOKitBrowserTests-Info.plist";
-				PRODUCT_NAME = IOKitBrowserTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		BE2506C58BAC468A9047E9A6 /* profiling */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOKitTest.app/IOKitTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOKitTest/IOKitTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IOKitTestTests/IOKitBrowserTests-Info.plist";
-				PRODUCT_NAME = IOKitBrowserTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = profiling;
 		};
 		DAE539FBEE7A4889B8EAD138 /* adhoc */ = {
 			isa = XCBuildConfiguration;
@@ -817,17 +667,6 @@
 				AD7E3EC6186BBBBB00E47119 /* Release */,
 				254D11163F85421D922EA685 /* adhoc */,
 				0AAC631A05DE4B7697873C8E /* profiling */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD7E3EC7186BBBBB00E47119 /* Build configuration list for PBXNativeTarget "IOKitBrowserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD7E3EC8186BBBBB00E47119 /* Debug */,
-				AD7E3EC9186BBBBB00E47119 /* Release */,
-				250897B0EE294EA7AD797C9D /* adhoc */,
-				BE2506C58BAC468A9047E9A6 /* profiling */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
