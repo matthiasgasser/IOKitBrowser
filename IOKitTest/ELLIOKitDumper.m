@@ -65,7 +65,7 @@ static void assertion(int condition, char *message) {
 
 @implementation ELLIOKitDumper
 
-- (ELLIOKitNodeInfo *)dumpIOKitTree {
+- (ELLIOKitNodeInfo *)dumpIOKitTreeWithError:(NSError **)error {
     mach_port_t iokitPort = 0;
     struct options options;
     io_registry_entry_t service = 0;
@@ -77,10 +77,17 @@ static void assertion(int condition, char *message) {
     options.plane = kIOServicePlane;
 
     status = IOMasterPort(bootstrap_port, &iokitPort);
-    assertion(status == KERN_SUCCESS, "can't obtain I/O Kit's master port");
-
+    if (status != KERN_SUCCESS) {
+        *error = [NSError errorWithDomain:@"can't obtain I/O Kit's master port" code:1 userInfo:nil];
+        return nil;
+    }
+    
     service = IORegistryGetRootEntry(iokitPort);
-    assertion(service, "can't obtain I/O Kit's root service");
+    
+    if (service == 0) {
+        *error = [NSError errorWithDomain:@"can't obtain I/O Kit's root service" code:1 userInfo:nil];
+        return nil;
+    }
 
     ELLIOKitNodeInfo *root = [self _scan:nil service:service options:options];
 

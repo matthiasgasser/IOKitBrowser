@@ -12,6 +12,6 @@
 
 @interface ELLIOKitDumper : NSObject
 
-- (ELLIOKitNodeInfo *)dumpIOKitTree;
+- (ELLIOKitNodeInfo *)dumpIOKitTreeWithError:(NSError **)error;
 
 @end
