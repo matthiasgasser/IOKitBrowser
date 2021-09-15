@@ -44,6 +44,7 @@ static NSString *kSearchTerm = @"kSearchTerm";
                                                  name:UIKeyboardWillHideNotification object:nil];
 
     self.dumper = [ELLIOKitDumper new];
+    [super awakeFromNib];
 }
 
 - (void)dealloc {
